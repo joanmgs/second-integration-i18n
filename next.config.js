@@ -6,8 +6,8 @@ const nextConfig = {
   },
   i18n: {
     defaultLocale: "es-ES",
-    locales: ["es-ES", "pt-BR", "en-US"]
-  }
+    locales: ["es-ES", "pt-BR", "en-US"],
+  },
 };
 
 module.exports = nextConfig;

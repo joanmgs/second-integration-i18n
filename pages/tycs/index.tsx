@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from "next";
+import { GetServerSideProps, GetStaticProps, NextPage } from "next";
 import React from "react";
 import { TyC, TyCsAPIResponse } from "../../types";
 import styles from "../../styles/TYC.module.css";
@@ -41,7 +41,7 @@ const TerminosYCondiciones: NextPage<IProps> = ({ data }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const url = `${process.env.BASE_URL}/api/tycs/${context.locale}`;
   const response = await fetch(url);
   const data = await response.json();
