@@ -7,7 +7,7 @@ import {
   localeNames,
   locales,
   TEXTS_BY_LANGUAGE,
-} from "../../../locale/constants";
+} from "../../locale/constants";
 import { useRouter } from "next/router";
 
 const Header = () => {

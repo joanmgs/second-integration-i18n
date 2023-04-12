@@ -13,6 +13,7 @@ type IProps = {
 const TerminosYCondiciones: NextPage<IProps> = ({ data }) => {
   const path = useRouter();
   const language = path.locale || defaultLocale;
+
   if (!data) return null;
 
   const { version, tycs } = data;
