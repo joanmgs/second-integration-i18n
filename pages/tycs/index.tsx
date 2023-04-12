@@ -1,10 +1,10 @@
 import { GetStaticProps, NextPage } from "next";
 import React from "react";
-import { TyC, TyCsAPIResponse } from "../types";
-import styles from "../styles/TYC.module.css";
+import { TyC, TyCsAPIResponse } from "../../types";
+import styles from "../../styles/TYC.module.css";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { TEXTS_BY_LANGUAGE, defaultLocale } from "../locale/constants";
+import { TEXTS_BY_LANGUAGE, defaultLocale } from "../../locale/constants";
 
 type IProps = {
   data: TyCsAPIResponse;
