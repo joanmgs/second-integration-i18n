@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/Header.module.css";
 import {
+  defaultLocale,
   localeNames,
   locales,
   TEXTS_BY_LANGUAGE,
@@ -11,7 +12,7 @@ import { useRouter } from "next/router";
 
 const Header = () => {
   const path = useRouter();
-  const language = path.locale;
+  const language = path.locale || defaultLocale;
 
   return (
     <header className={styles.header}>

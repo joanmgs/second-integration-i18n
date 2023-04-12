@@ -3,13 +3,13 @@ const ES_ES = "es-ES";
 const PT_BR = "pt-BR";
 
 export const defaultLocale = ES_ES;
-export const locales = {
+export const locales: { [key: string]: string } = {
   EN_US,
   ES_ES,
   PT_BR,
 };
 
-export const localeNames = {
+export const localeNames: { [key: string]: string } = {
   [EN_US]: "English",
   [ES_ES]: "Español",
   [PT_BR]: "Português",
