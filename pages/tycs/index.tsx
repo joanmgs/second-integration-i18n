@@ -43,7 +43,6 @@ const TerminosYCondiciones: NextPage<IProps> = ({ data }) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const url = `${process.env.BASE_URL}/api/tycs/${context.locale}`;
-  console.log(">>>>>>URL: ", url);
   const response = await fetch(url);
   const data = await response.json();
 
